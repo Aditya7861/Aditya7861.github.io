@@ -1,76 +1,63 @@
- <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aditya Pratap Singh</title>
-        <style type="text/css">
-            
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            body {
-                background-color: #000;
-            }
-            .fly-in-text {
-                list-style: none;
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translateX(-50%) translateY(-50%);
-            }
-            .fly-in-text li {
-                display: inline-block;
-                margin-right: 50px;
-                font-family: Open Sans, Arial;
-                font-weight: 300;
-                font-size: 4em;
-                color: #fff;
-                opacity: 1;
-                transition: all 2.5s ease;
-            }
-            .fly-in-text li:last-child {
-                margin-right: 0;
-            }
-            .fly-in-text.hidden li {
-                opacity: 0;
-            }
-            .fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
-            .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
-            .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
-            .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
-            .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
-            .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
-            .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
-            
-            
-        </style>
-    </head>
-    <body>
+<!DOCTYPE html>
 
-        <ul class="fly-in-text hidden">
-            <li>A</li>
-            <li>D</li>
-            <li>I</li>
-            <li>T</li>
-            <li>Y</li>
-            <li>A</li>
-        </ul>
-        
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script type="text/javascript">
-            
-            $(function() {
-                
-                setTimeout(function() {
-                    $('.fly-in-text').removeClass('hidden');
-                }, 500);
-                
-            })();
-            
-        </script>
+<head>
+    <meta charset="utf-8">
+    <title> Aditya Pratap </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
 
-    </body>
+<body>
+    <div id="top" class="header">
+        <div class="text2">
+            <br>
+            <br>
+            <img class="pic" src="./img/aditya.png">
+            <br>
+            <h2 class="yatra1"><b> Aditya Pratap </b></h2>
+            <br>
+            <a title="" class="icon" href="#"> <i class="fa fa-code fa-4x"></i> </a>
+            <h3 class="yatra1"> Hi there ! </h3>
+            <!-- <a class="resume" href="#" target="_top"> <span class="network-name"><i class="fa fa-download"></i><b>Resume</b></span></a> -->
+            <br></br>
+            <ul class="list-inline ">
+                <li>
+                    <a title="Facebook"  href="https://www.facebook.com/xda.aditya" target="_blank"> <i class="fa fa-facebook fa-3x"></i> </a>
+                </li>
+                <li>
+                    <a title="Twitter" class="icon" href="https://twitter.com/aditya_pr1" target="_blank"><i class="fa fa-twitter fa-3x"></i> </a>
+                </li>
+                <li>
+                    <a title="LinkedIn" class="icon" href="https://www.linkedin.com/in/aditya9640/" target="_blank"> <i class="fa fa-linkedin fa-3x"></i> </a>
+                </li>
+                <li>
+                    <a title="Projects" class="icon" href="https://github.com/aditya7861" target="_blank"> <i class="fa fa-github fa-3x"></i> </a>
+                </li>
+
+                <li>
+                    <a title="Email" href="mailto:aditya9640@gmail.com" target="_blank" ><i class="icons fa fa-envelope fa-3x"></i></a>
+                </li>
+                
+                <!-- <li>
+                    <a title="Stack Overflow" class="icon" href="https://stackoverflow.com/users/5351953/aditya-pratap" 
+                    target="_blank" ><i class="fa fa-stack-overflow fa-3x"></i> </a>
+                </li> -->
+
+                <li>
+                    <a title="Quora" class="icon" href="https://www.quora.com/profile/Aditya-Pratap-31" target="_blank" >
+                    <i class="fa fa-quora fa-3x"></i> </a>
+                </li>
+                <li>
+                    <a title="Competitive Programming" class="icon" href="https://www.hackerrank.com/aditya9640" target="_blank">
+                    <i class="fa fa-code fa-3x"></i> </a>
+                </li>
+                               
+            </ul>
+        </div>
+    </div>
+</body>
+
 </html>
