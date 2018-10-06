@@ -1,63 +1,98 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta charset="utf-8">
-    <title> Aditya Pratap </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-</head>
-
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script></head>
 <body>
-    <div id="top" class="header">
-        <div class="text2">
-            <br>
-            <br>
-            <img class="pic" src="./img/aditya.png">
-            <br>
-            <h2 class="yatra1"><b> Aditya Pratap </b></h2>
-            <br>
-            <a title="" class="icon" href="#"> <i class="fa fa-code fa-4x"></i> </a>
-            <h3 class="yatra1"> Hi there ! </h3>
-            <!-- <a class="resume" href="#" target="_top"> <span class="network-name"><i class="fa fa-download"></i><b>Resume</b></span></a> -->
-            <br></br>
-            <ul class="list-inline ">
-                <li>
-                    <a title="Facebook"  href="https://www.facebook.com/xda.aditya" target="_blank"> <i class="fa fa-facebook fa-3x"></i> </a>
-                </li>
-                <li>
-                    <a title="Twitter" class="icon" href="https://twitter.com/aditya_pr1" target="_blank"><i class="fa fa-twitter fa-3x"></i> </a>
-                </li>
-                <li>
-                    <a title="LinkedIn" class="icon" href="https://www.linkedin.com/in/aditya9640/" target="_blank"> <i class="fa fa-linkedin fa-3x"></i> </a>
-                </li>
-                <li>
-                    <a title="Projects" class="icon" href="https://github.com/aditya7861" target="_blank"> <i class="fa fa-github fa-3x"></i> </a>
-                </li>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">*I am coder so wants you to wish you happy birthday in special way</span><br />
+				<span class="space"/><span class="comments">*so I written some code to clebrate your Birthday.</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Aditya"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Archana"</span>);<br />
+				<span class="comments">// July 2015, I told you I love you 💚. </span><br />
+				i.love(u);<br />
+				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
+				u.accepted();<br />
+				<span class="comments">// Since then, I miss u every day.</span><br />
+				i.miss(u);<br />
+				<span class="comments">// And take care of u and our love.</span><br />
+				i.takeCareOf(u);<br />
+				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
+				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
+				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (isHesitate) {<br />
+				<span class="placeholder"/>i.waitFor(u);<br />
+				<span class="placeholder"/><span class="comments">// I know long distance realionship sucks but our strong love bond keeping us together</span><br />
+				<span class="placeholder"/><span class="comments">// and soon all this going to end :).</span><br />
+				<!-- <span class="placeholder"/>isHesitate = u.thinkOver();<br /> -->
+				}<br />
+				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
+				i.marry(u);<br />
+				i.liveHappilyWith(u);<br />
+				and Happy Birthday to you :) <br/>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Archu, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br/>
+						<div class="signature">- Aditya</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2015, 6, 2);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
 
-                <li>
-                    <a title="Email" href="mailto:aditya9640@gmail.com" target="_blank" ><i class="icons fa fa-envelope fa-3x"></i></a>
-                </li>
-                
-                <!-- <li>
-                    <a title="Stack Overflow" class="icon" href="https://stackoverflow.com/users/5351953/aditya-pratap" 
-                    target="_blank" ><i class="fa fa-stack-overflow fa-3x"></i> </a>
-                </li> -->
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
 
-                <li>
-                    <a title="Quora" class="icon" href="https://www.quora.com/profile/Aditya-Pratap-31" target="_blank" >
-                    <i class="fa fa-quora fa-3x"></i> </a>
-                </li>
-                <li>
-                    <a title="Competitive Programming" class="icon" href="https://www.hackerrank.com/aditya9640" target="_blank">
-                    <i class="fa fa-code fa-3x"></i> </a>
-                </li>
-                               
-            </ul>
-        </div>
-    </div>
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
 </body>
-
 </html>
+
