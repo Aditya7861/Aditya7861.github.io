@@ -11,12 +11,11 @@ body {
 
 .yatra2{
     font-family: 'Lato', sans-serif;
-}
-/* 
+} 
 .resume {
     text-align: center;
     text-decoration-color: currentColor;
-} */
+} 
 
 h3 {
     font-size: 30px;
@@ -51,7 +50,7 @@ h3 {
     height: 100%;
     width: 100%;
     position: relative;
-    background-image: linear-gradient(240deg, #4bcf13, #3bcfb7, #a54bcf);
+    background-image: linear-gradient(240deg, #e02c71, #6de436ef, #4a3fe2);
     background-size: 400% 400%;
 }
 
